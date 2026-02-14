@@ -1,23 +1,26 @@
 openapi: 3.0.4
 info:
   title: HMAC Generator
-  description: HMAC Generator creates Hash-based Message Authentication Codes for data integrity and authentication. Supports SHA-256, SHA-384, SHA-512, SHA-1, and MD5 algorithms.
+  description: >-
+    HMAC Generator creates Hash-based Message Authentication Codes for data
+    integrity and authentication. Supports SHA-256, SHA-384, SHA-512, SHA-1, and
+    MD5 algorithms.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/hmac:
     post:
       summary: Generate HMAC
-      description: HMAC Generator creates Hash-based Message Authentication Codes for data integrity and authentication. Supports SHA-256, SHA-384, SHA-512, SHA-1, and MD5 algorithms.
+      description: Generate an HMAC signature for a message
       operationId: hmac
       parameters: []
       responses:
@@ -35,13 +38,14 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
-                  hmac: 2cd7c25025198d4458002ceb064ad37ccfbbe46650876d693f5e080bd954e449
+                  hmac: >-
+                    2cd7c25025198d4458002ceb064ad37ccfbbe46650876d693f5e080bd954e449
                   algorithm: sha256
                   encoding: hex
         '401':
@@ -49,7 +53,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
       requestBody:
         required: true
         content:
@@ -60,29 +64,18 @@ paths:
                 message:
                   type: string
                   description: The message to sign
-                  example: Hello World
                 secret:
                   type: string
                   description: The secret key for HMAC generation
-                  example: my-secret-key
                 algorithm:
                   type: string
-                  description: 'Hash algorithm: sha256, sha384, sha512, sha1, md5'
-                  default: sha256
-                  example: sha256
+                  description: Hash algorithm to use
                 encoding:
                   type: string
-                  description: 'Output encoding: hex or base64'
-                  default: hex
-                  example: hex
+                  description: Output encoding format
               required:
-              - message
-              - secret
-              example:
-                message: Hello World
-                secret: my-secret-key
-                algorithm: sha256
-                encoding: hex
+                - message
+                - secret
 components:
   securitySchemes:
     api_key:
@@ -90,4 +83,9 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
+sampleRequest:
+  message: Hello World
+  secret: my-secret-key
+  algorithm: sha256
+  encoding: hex
