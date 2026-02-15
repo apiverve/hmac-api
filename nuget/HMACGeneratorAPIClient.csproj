@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>APIVerve.API.HMACGenerator</Title>
-    <Version>1.1.12</Version>
+    <Title>HMACGenerator</Title>
+    <Version>1.1.13</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -12,13 +12,13 @@
 
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <PackageProjectUrl>https://apiverve.com/marketplace/hmac</PackageProjectUrl>
+    <PackageProjectUrl>https://apiverve.com/marketplace/hmac?utm_source=nuget&amp;utm_medium=homepage</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
     <Description>HMAC Generator creates Hash-based Message Authentication Codes for data integrity and authentication. Supports SHA-256, SHA-384, SHA-512, SHA-1, and MD5 algorithms.</Description>
     <RepositoryUrl>https://github.com/apiverve/hmac-api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>hmac;hash;signature;authentication;sha256;api;rest;http;client;apiverve;wrapper;sdk;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
-    <Copyright>©2025 APIVerve. All Rights Reserved</Copyright>
+    <PackageTags>api;rest;http;client;apiverve;wrapper;sdk;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
+    <Copyright>©2026 APIVerve. All Rights Reserved</Copyright>
     <ApplicationIcon>favicon.ico</ApplicationIcon>
     <PackageIcon>favicon@128.png</PackageIcon>
     <BaseOutputPath>.\bin</BaseOutputPath>
