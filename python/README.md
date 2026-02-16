@@ -44,7 +44,12 @@ from apiverve_hmacgenerator.apiClient import HmacAPIClient
 # Initialize the client with your APIVerve API key
 api = HmacAPIClient("[YOUR_API_KEY]")
 
-query = { "message": "Hello World", "secret": "my-secret-key", "algorithm": "sha256", "encoding": "hex" }
+query = {
+    "message": "Hello World",
+    "secret": "my-secret-key",
+    "algorithm": "sha256",
+    "encoding": "hex"
+}
 
 try:
     # Make the API call
@@ -82,7 +87,12 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "message": "Hello World", "secret": "my-secret-key", "algorithm": "sha256", "encoding": "hex" }
+query = {
+    "message": "Hello World",
+    "secret": "my-secret-key",
+    "algorithm": "sha256",
+    "encoding": "hex"
+}
 ```
 
 ###### Simple Request
@@ -122,7 +132,12 @@ from apiverve_hmacgenerator.apiClient import HmacAPIClient, HmacAPIClientError
 
 api = HmacAPIClient("[YOUR_API_KEY]")
 
-query = { "message": "Hello World", "secret": "my-secret-key", "algorithm": "sha256", "encoding": "hex" }
+query = {
+    "message": "Hello World",
+    "secret": "my-secret-key",
+    "algorithm": "sha256",
+    "encoding": "hex"
+}
 
 try:
     result = api.execute(query)
@@ -143,7 +158,12 @@ from apiverve_hmacgenerator.apiClient import HmacAPIClient, HmacAPIClientError
 
 api = HmacAPIClient("[YOUR_API_KEY]")
 
-query = { "message": "Hello World", "secret": "my-secret-key", "algorithm": "sha256", "encoding": "hex" }
+query = {
+    "message": "Hello World",
+    "secret": "my-secret-key",
+    "algorithm": "sha256",
+    "encoding": "hex"
+}
 
 try:
     result = api.execute(query)
@@ -177,7 +197,12 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_hmacgenerator.apiClient import HmacAPIClient, HmacAPIClientError
 
-query = { "message": "Hello World", "secret": "my-secret-key", "algorithm": "sha256", "encoding": "hex" }
+query = {
+    "message": "Hello World",
+    "secret": "my-secret-key",
+    "algorithm": "sha256",
+    "encoding": "hex"
+}
 
 # Using context manager ensures proper cleanup
 with HmacAPIClient("[YOUR_API_KEY]") as api:
@@ -203,7 +228,12 @@ from apiverve_hmacgenerator.apiClient import HmacAPIClient
 # Enable debug mode
 api = HmacAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "message": "Hello World", "secret": "my-secret-key", "algorithm": "sha256", "encoding": "hex" }
+query = {
+    "message": "Hello World",
+    "secret": "my-secret-key",
+    "algorithm": "sha256",
+    "encoding": "hex"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -218,8 +248,14 @@ from apiverve_hmacgenerator.apiClient import HmacAPIClient
 
 api = HmacAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "message": "Hello World",
+    "secret": "my-secret-key",
+    "algorithm": "sha256",
+    "encoding": "hex"
+}
+
 try:
-    query = { "message": "Hello World", "secret": "my-secret-key", "algorithm": "sha256", "encoding": "hex" }
     result = api.execute(query)
     print(result)
 finally:
