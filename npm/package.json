@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/hmac",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "HMAC Generator creates Hash-based Message Authentication Codes for data integrity and authentication. Supports SHA-256, SHA-384, SHA-512, SHA-1, and MD5 algorithms.",
   "main": "index.js",
   "types": "index.d.ts",
