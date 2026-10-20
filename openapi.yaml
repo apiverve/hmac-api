@@ -19,7 +19,7 @@ servers:
 paths:
   /v1/hmac:
     post:
-      summary: Generate HMAC
+      summary: HMAC Generator
       description: Generate an HMAC signature for a message
       operationId: hmac
       parameters: []
@@ -44,8 +44,7 @@ paths:
                 status: ok
                 error: null
                 data:
-                  hmac: >-
-                    2cd7c25025198d4458002ceb064ad37ccfbbe46650876d693f5e080bd954e449
+                  hmac: 2cd7c25025198d4458002ceb064ad37ccfbbe46650876d693f5e080bd954e449
                   algorithm: sha256
                   encoding: hex
         '401':
