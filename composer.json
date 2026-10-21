@@ -1,7 +1,7 @@
 {
     "name": "apiverve/hmac",
     "description": "HMAC Generator creates Hash-based Message Authentication Codes for data integrity and authentication. Supports SHA-256, SHA-384, SHA-512, SHA-1, and MD5 algorithms.",
-    "version": "1.2.0",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "hmac",
-        "hmac",
-        "hash",
-        "signature",
-        "authentication",
-        "sha256"
+        "hmac api",
+        "hmac generator api",
+        "hmac sha256 api",
+        "hmac authentication",
+        "api hash"
     ],
-    "homepage": "https://apiverve.com/marketplace/hmac?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/hmac?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/hmac",
