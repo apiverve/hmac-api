@@ -5,7 +5,7 @@ HMAC Generator creates Hash-based Message Authentication Codes for data integrit
 [![pub package](https://img.shields.io/pub/v/apiverve_hmac.svg)](https://pub.dev/packages/apiverve_hmac)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [HMAC Generator API](https://apiverve.com/marketplace/hmac?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [HMAC Generator API](https://apiverve.com/marketplace/hmac?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_hmac: ^1.1.14
+  apiverve_hmac: ^1.2.4
 ```
 
 Then run:
@@ -64,12 +64,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [HMAC Generator API](https://apiverve.com/marketplace/hmac?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/hmac](https://docs.apiverve.com/ref/hmac?utm_source=dart&utm_medium=readme)
+- **API Home:** [HMAC Generator API](https://apiverve.com/marketplace/hmac?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/hmac](https://docs.apiverve.com/ref/hmac?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -77,4 +77,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)

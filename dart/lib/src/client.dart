@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// HMAC Generator API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/hmac?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/hmac?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [message] (required) - The message to sign
